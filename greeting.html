@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First React App</title>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script type="text/babel">
+      class Greeting extends React.component {
+        render() {
+          return (
+            <div>
+              <h1>Hello World!</h1>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <Greeting />, document.getElementById('app')
+      ); //can jQuery be used to grab the element? or is this easier with text editors?
+      //first argument is the element that is getting plugged
+      //separated by a ,
+      //second argument is the HTML element in the DOM where it is being plugged
+    </script>
+    <p>Hello world!</p>
+  </body>
+
+</html>
